@@ -143,7 +143,9 @@ RF = Random Forest
 We concluded that the model and combination marked in bold had the highest accuracy of all the models, and it would be wise to consider it for our final model due to its considerable **test accuracy**. (training accuracy is high but that doesn't imply that the model is ideal)
 
 Further the confusion matrix for that model was as follows
+
 ![](https://i.ibb.co/PhPLZCn/Screenshot-from-2020-04-16-22-41-36.png)
+
 We observe that the correctly predict flair for the Reddiquette flairs is extremely low, and hence we say that **our model is unfit to predict posts of that flair within certain confidence**.
 
 In order to slightly improve the accuracy, we run the same model without considering the posts of the Reddiquette flair. Hence, we decide to export this model using the [Pickle](https://docs.python.org/3/library/pickle.html) tool.
