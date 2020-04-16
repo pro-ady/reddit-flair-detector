@@ -1,0 +1,37 @@
+0,1,2,3,4
+body,Count Vectorizer,LR,0.492,0.232
+body,Count Vectorizer,SVC,0.39066666666666666,0.236
+body,Count Vectorizer,RF,0.6253333333333333,0.436
+body,TFIDF Vectorizer,LR,0.52,0.324
+body,TFIDF Vectorizer,SVC,0.15466666666666667,0.168
+body,TFIDF Vectorizer,RF,0.608,0.328
+comments,Count Vectorizer,LR,0.52,0.148
+comments,Count Vectorizer,SVC,0.204,0.124
+comments,Count Vectorizer,RF,0.62,0.18
+comments,TFIDF Vectorizer,LR,0.6826666666666666,0.164
+comments,TFIDF Vectorizer,SVC,0.11866666666666667,0.108
+comments,TFIDF Vectorizer,RF,0.524,0.16
+title,Count Vectorizer,LR,0.8346666666666667,0.696
+title,Count Vectorizer,SVC,0.46266666666666667,0.408
+title,Count Vectorizer,RF,0.8106666666666666,0.704
+title,TFIDF Vectorizer,LR,0.9146666666666666,0.724
+title,TFIDF Vectorizer,SVC,0.136,0.124
+title,TFIDF Vectorizer,RF,0.7626666666666667,0.712
+URL,Count Vectorizer,LR,0.6586666666666666,0.508
+URL,Count Vectorizer,SVC,0.444,0.388
+URL,Count Vectorizer,RF,0.6973333333333334,0.556
+URL,TFIDF Vectorizer,LR,0.8813333333333333,0.536
+URL,TFIDF Vectorizer,SVC,0.128,0.124
+URL,TFIDF Vectorizer,RF,0.6146666666666667,0.516
+body + comments,Count Vectorizer,LR,0.5533333333333333,0.252
+body + comments,Count Vectorizer,SVC,0.4706666666666667,0.24
+body + comments,Count Vectorizer,RF,0.8026666666666666,0.456
+body + comments,TFIDF Vectorizer,LR,0.7573333333333333,0.384
+body + comments,TFIDF Vectorizer,SVC,0.14133333333333334,0.136
+body + comments,TFIDF Vectorizer,RF,0.7733333333333333,0.344
+All Params,Count Vectorizer,LR,0.6853333333333333,0.42
+All Params,Count Vectorizer,SVC,0.7733333333333333,0.468
+All Params,Count Vectorizer,RF,0.9573333333333334,0.828
+All Params,TFIDF Vectorizer,LR,0.904,0.7
+All Params,TFIDF Vectorizer,SVC,0.13466666666666666,0.128
+All Params,TFIDF Vectorizer,RF,0.92,0.728

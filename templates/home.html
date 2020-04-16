@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Welcome to the Reddit Flair Detector</h1>
+
+<!-- <a href="/">Goto Results</a> -->
+
+<div class="instructions">
+	<p>Input a link of a post from r/india subreddit, and the application will try to predict which flair is assigned to it. You can also upload a text file containing links in each line, and the output shall be a json file, containing predicted flairs for each link</p>
+</div>
+
+<div class="form-reddit">
+	<div id="urlInput">
+		<form action="{{(url_for('flair'))}}" method="POST">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Enter URL</label>
+		    <input type="url" class="form-control" id="urlInputField" aria-describedby="emailHelp" name="redditURL" placeholder="Enter complete URL of post from r/india">
+		    <small id="urlHelp" class="form-text text-muted">Format = https://www.reddit.com/r/india/comments/"reddit-post-id"/"post-title"
+		    </small>
+		  </div>
+		  <button type="submit" class="btn btn-dark">Predict Now!</button>
+		</form>
+	</div>
+
+	<!-- <div>
+		<form action="{{(url_for('flair'))}}" method="POST">
+			<input type="url" name="redditURL" placeholder="Enter URL">
+			<input type="submit" value="Predict Now!!">
+		</form>
+	</div>
+	 -->
+	<h3>OR</h3>
+
+	<div>
+		<form action="/automated_testing" method="POST" enctype="multipart/form-data" class="file-upload" name="fileUpload">
+			<input type="file" name="attachment" placeholder="Choose File">
+			<button type="submit" class="btn-dark btn-sm">Upload File</button>
+		</form>
+	</div>
+</div>
+
+{% endblock%}

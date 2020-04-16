@@ -1,0 +1,37 @@
+Considering,Vectorizer,Model,Train Accuracy,Test Accuracy
+body,Count Vectorizer,LR,49.2,23.2
+body,Count Vectorizer,SVC,39.07,23.6
+body,Count Vectorizer,RF,62.53,43.6
+body,TFIDF Vectorizer,LR,52.0,32.4
+body,TFIDF Vectorizer,SVC,15.47,16.8
+body,TFIDF Vectorizer,RF,60.8,32.8
+comments,Count Vectorizer,LR,52.0,14.8
+comments,Count Vectorizer,SVC,20.4,12.4
+comments,Count Vectorizer,RF,62.0,18.0
+comments,TFIDF Vectorizer,LR,68.27,16.4
+comments,TFIDF Vectorizer,SVC,11.87,10.8
+comments,TFIDF Vectorizer,RF,52.4,16.0
+title,Count Vectorizer,LR,83.47,69.6
+title,Count Vectorizer,SVC,46.27,40.8
+title,Count Vectorizer,RF,81.07,70.4
+title,TFIDF Vectorizer,LR,91.47,72.4
+title,TFIDF Vectorizer,SVC,13.6,12.4
+title,TFIDF Vectorizer,RF,76.27,71.2
+URL,Count Vectorizer,LR,65.87,50.8
+URL,Count Vectorizer,SVC,44.4,38.8
+URL,Count Vectorizer,RF,69.73,55.6
+URL,TFIDF Vectorizer,LR,88.13,53.6
+URL,TFIDF Vectorizer,SVC,12.8,12.4
+URL,TFIDF Vectorizer,RF,61.47,51.6
+body + comments,Count Vectorizer,LR,55.33,25.2
+body + comments,Count Vectorizer,SVC,47.07,24.0
+body + comments,Count Vectorizer,RF,80.27,45.6
+body + comments,TFIDF Vectorizer,LR,75.73,38.4
+body + comments,TFIDF Vectorizer,SVC,14.13,13.6
+body + comments,TFIDF Vectorizer,RF,77.33,34.4
+All Params,Count Vectorizer,LR,68.53,42.0
+All Params,Count Vectorizer,SVC,77.33,46.8
+All Params,Count Vectorizer,RF,95.73,82.8
+All Params,TFIDF Vectorizer,LR,90.4,70.0
+All Params,TFIDF Vectorizer,SVC,13.47,12.8
+All Params,TFIDF Vectorizer,RF,92.0,72.8
