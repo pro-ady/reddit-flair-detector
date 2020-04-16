@@ -4,20 +4,32 @@
 	<title>Flask Web App</title>
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> 
-
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">	
+	<script src="https://use.fontawesome.com/f388de0438.js"></script>
 </head>
 <body>
+	<div>
+		<nav class="navbar navbar-expand-lg transparent navbar-inverse ">
+			<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+			  <a class="navbar-brand" href="/"><i class="fa fa-reddit-alien" aria-hidden="true"></i> Reddit Flair Detector</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			</div>
+
+			<div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+		            <li class="nav-item">
+		                <a class="nav-link" href="https://github.com/pro-ady/reddit-flair-detector"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i> Made by S.Aditya</a>
+		            </li>
+	        	</ul>
+			</div>
+		</nav>
+	</div>
 	<div class="container">	
 		{% block content %}
 
 		{% endblock %}
-	</div>
-
-	<div class="footer">
-		<p>Created by S.Aditya<br>
-		See the entire Github repo at <a href="#">Reddit Flair Detector</a>
-		</p>
 	</div>
 	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 	<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
