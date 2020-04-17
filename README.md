@@ -168,7 +168,7 @@ A route ```/automated_testing``` to which you could send a text file (.txt) as a
 Downsides of the model:
 - It doesn't classify posts belonging to the Reddiquette flair
 - It doesn't work well with posts which have a low amount of content or in which comments is not present at all
-- Certain posts of the Politics flair may get classified under the Politics category since both have a major resemblance in the word distribution 
+- Certain posts of the Politicy/Economy flair may get classified under the Politics category since both have a major resemblance in the word distribution 
 
 Upsides of the model:
 - Works well with posts having sufficient content
