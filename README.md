@@ -30,6 +30,14 @@ The aim of the project was to detect the flair of a post belonging to the r/indi
 - scikit-learn (for the various machine learning models)
 - nltk (for NLP)
 - Flask (for Web App Development)
+
+#### FILE STRUCTURE FOR THIS PROJECT
+The various folders and their signinficance have been listed below:
+- ``/data``: Contains the csv files and the raw data of Reddit posts
+- ``/develop``: Contains the iPython notebooks detailing all the processing and modelling of data
+- ``/models``: Contains the exported/saved models
+- ``/static``: Contains the CSS, JS files for the web application
+- ``/templates``: Contains the HTML files for the web application
 ---
 
 ### 2. DATA ACQUISITION 
