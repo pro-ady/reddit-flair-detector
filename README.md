@@ -144,9 +144,9 @@ The accuracy for each of the possible combinations was calculated and stored in 
 |All Params     |TFIDF Vectorizer|LR   |90.4          |70.0         |
 |All Params     |TFIDF Vectorizer|SVC  |13.47         |12.8         |
 |All Params     |TFIDF Vectorizer|RF   |92.0          |72.8         |
-LR = Logistic Regression
-SVC = Support Vector Classifier
-RF = Random Forest
+LR = Logistic Regression |||||
+SVC = Support Vector Classifier |||||
+RF = Random Forest |||||
 
 We concluded that the model and combination marked in bold had the highest accuracy of all the models, and it would be wise to consider it for our final model due to its considerable **test accuracy**. (training accuracy is high but that doesn't imply that the model is ideal)
 
