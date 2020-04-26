@@ -40,7 +40,7 @@ The various folders and their signinficance have been listed below:
 - ``/templates``: Contains the HTML files for the web application
 ---
 
-### 2. DATA ACQUISITION 
+### 2. [DATA ACQUISITION](https://github.com/pro-ady/reddit-flair-detector/blob/master/develop/Data%20Acquisition.ipynb) 
 Data acquisition was achieved using the [praw](https://praw.readthedocs.io/en/latest/) tool. Firstly we identified the different flairs available in the subreddit which were as follows:
 - "Sports", 
 - "Politics",
@@ -68,7 +68,7 @@ Nevertheless, if one wishes to acquire that data, the query used was as follows
 The data acquired was saved as it is to [this file](https://github.com/pro-ady/reddit-flair-detector/blob/master/data/reddit_data_raw.csv).
 
 ---
-### 3. DATA VISUALIZATION
+### 3. [DATA VISUALIZATION](https://github.com/pro-ady/reddit-flair-detector/blob/master/develop/Data%20Preprocessing%20and%20Cleaning.ipynb)
 Data acquired in the raw form can no case be used as it is. Hence we had to format or clean it to move on to the next step. However in this project, we couldn't clean the data unless we knew exactly how the data was present and what could be done to "clean" it. We used Data Visualisation for this.
 
 - First step involved seeing how many posts of each flair do we have and how evenly was the quantity distributed. We saw that every flair, with the exception of Reddiquette had ~100 posts each. At this point itself, we could have said that the prediction accuracy for Reddiquette would be low since we don't have enough posts. But we shall deal with that later.
@@ -88,7 +88,7 @@ Next, we make use of the nltk package to perform lemmatization of the text field
 We shall export this preprocessed and cleaned data into [this file](https://github.com/pro-ady/reddit-flair-detector/blob/master/data/reddit_data_preprocessed.csv)
 
 ---
-### 4. DATA MODELLING
+### 4. [DATA MODELLING](https://github.com/pro-ady/reddit-flair-detector/blob/master/develop/Modelling%20Data.ipynb)
 Our first step was to choose the combination of labels on which we intended to train our models. Since we didn't have the knowledge of which parameter had the highest influence on the flair, we considered the following combinations:
 - only body
 - only comments
