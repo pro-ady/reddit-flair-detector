@@ -3,6 +3,7 @@ from werkzeug.utils import secure_filename
 import pickle
 import script
 import os
+import json
 
 app = Flask(__name__)
 
@@ -33,7 +34,7 @@ def flair():
 @app.route("/automated_testing", methods=['POST'])
 def automated_testing():
 	print(request.files)
-	attachment = request.files['attachment']
+	attachment = request.files['upload_file']
 	urls = attachment.read()
 	if urls == "":
 		if 'url' not in request.args:
@@ -44,7 +45,7 @@ def automated_testing():
 			check_error, error_message = script.checkRedditURL(URL)
 
 			if check_error == False:
-				return error_message
+				return render_template('error.html', error_message=error_message)
 
 			else:
 				X_test,actual_flair = script.getData_usingPraw(URL)
@@ -60,7 +61,7 @@ def automated_testing():
 
 				return jsonify(final_result)
 
-	elif 'attachment' in request.files:
+	elif 'upload_file' in request.files:
 		dirname = os.path.dirname(__file__)
 		filename = str(dirname) + "/models/CVRF_allParams.sav"
 		print('\n\n\n\n')
@@ -78,7 +79,7 @@ def automated_testing():
 
 		print(urls_list)
 
-		array = []
+		myObj = {}
 
 		for url in urls_list:
 			check_error, error_message = script.checkRedditURL(url)
@@ -87,7 +88,7 @@ def automated_testing():
 				element = {
 					str(url): str("Link error " + error_message)
 				}
-				array.append(element)
+				myObj.update(element)
 
 			else:
 				X_test,actual_flair = script.getData_usingPraw(url)
@@ -97,9 +98,9 @@ def automated_testing():
 					str(url): predicted_flair
 				}
 
-				array.append(element)
+				myObj.update(element)
 			
-		return jsonify(array[:-1])
+		return json.dumps(myObj)
 
 
 if __name__ == "__main__":
